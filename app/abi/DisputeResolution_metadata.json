@@ -1,0 +1,147 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "DisputeRaised",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "resolution",
+						"type": "bool"
+					}
+				],
+				"name": "DisputeResolved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "getDisputeStatus",
+				"outputs": [
+					{
+						"internalType": "enum DisputeResolution.DisputeResolutionStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "hasDisputeBeenRaised",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "raiseDispute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolution",
+						"type": "bool"
+					}
+				],
+				"name": "resolveDispute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DisputeResolution.sol": "DisputeResolution"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DisputeResolution.sol": {
+			"keccak256": "0x43dc40adece2470f0362bc792129d7ace1109f4e5e272b1c622e30e42e7d4836",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://48c78cf7d68519cd37df5b8318b201edf57df7255efccd883f5282349bfeeb41",
+				"dweb:/ipfs/QmSnXTdbsZMDxoXDZE3tbdy1WWxAGceULhXT1wQiuTP4Xt"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "QualityControlPassed",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "hasPassedQualityControl",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "designHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "passQualityControl",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/QualityControl.sol": "QualityControl"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/QualityControl.sol": {
+			"keccak256": "0x3c63e9f7d0658fc644c70aaa41a3d291c413b29bd7be367ddf37c09a9883065d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://22dfcbd2646210fd81305317920b1a83e9527963adab521134872b31db90a090",
+				"dweb:/ipfs/QmPWwx7guUkJ9bvcK9DAFic56UrRR5NtxgW11qCx1MzfqZ"
+			]
+		}
+	},
+	"version": 1
+}
